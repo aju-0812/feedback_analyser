@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Feedback Analyzer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="auth-body">
+
+  <div class="auth-container">
+    <h2>Create Your Account</h2>
+
+    <form action="/signup" method="POST" class="auth-form">
+      <div class="form-group">
+        <input type="text" name="fullname" placeholder="Full Name" required>
+      </div>
+
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+
+      <div class="form-group">
+        <input type="text" name="business" placeholder="Business Name">
+      </div>
+
+      <div class="form-group">
+        <input type="text" name="industry" placeholder="Industry Type">
+      </div>
+
+      <div class="form-group">
+        <input type="password" name="password" placeholder="Password" required>
+      </div>
+
+      <div class="form-group">
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+      </div>
+
+      <button type="submit" class="btn-primary">Sign Up</button>
+
+      <div class="divider"><span>OR</span></div>
+
+      <button type="button" class="btn-google">
+        <img src="{{ url_for('static', filename='img/google.png') }}" alt="Google">
+        Sign up with Google
+      </button>
+
+      <p class="switch-text">
+        Already have an account? <a href="/login">Login here</a>
+      </p>
+    </form>
+  </div>
+
+</body>
+</html>
