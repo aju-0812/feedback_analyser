@@ -33,5 +33,5 @@ A Python-based web application that analyzes textual feedback from multiple sour
 
 1. **Clone the repository**  
 ```bash
-git clone https://github.com/your-username/feedback-analyser.git
-cd feedback-analyser
+git clone https://github.com/aju-0812/feedback_analyser.git
+cd feedback_analyser
